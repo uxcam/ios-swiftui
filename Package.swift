@@ -16,19 +16,31 @@ let package = Package(
     [
         .library(
 			name: "UXCamSwiftUI",
-            targets: ["UXCamSwiftUI"]
+            targets: ["UXCamSwiftUI", "UXCamSwiftUIWrapper"]
 		)
     ],
-	dependencies: [
-			  .package(url: "https://github.com/uxcam/ios-sdk", from: "3.3.7"),
-		 ],
+	
+	dependencies:
+	[
+		.package(name: "UXCam", url: "https://github.com/uxcam/ios-sdk", from: "3.3.7"),
+	],
+	
     targets: 
     [
+		// 'UXCamSwiftUIWrapper' target is a way to include the necessary dependency that the binary XCFramework in UXCamSwiftUI requires.
+		// See https://forums.swift.org/t/swiftpm-binary-target-with-sub-dependencies/40197/13 for a long thread on the deficiencies of the `binaryTarget`
+		.target(
+				name: "UXCamSwiftUIWrapper",
+				dependencies: ["UXCam"],
+				path: "UXCamSwiftUIWrapper",
+				exclude: ["README.md"]
+		),
         .binaryTarget(
             name: "UXCamSwiftUI",
             //path: "./UXCamSwiftUI.xcframework"
 			//url: "https://github.com/uxcam/ios-swiftui/UXCamSwiftUI.xcframework.zip",
-			url: "https://raw.githubusercontent.com/uxcam/ios-swiftui/\(version)/UXCamSwiftUI.xcframework.zip",
+			//url: "https://raw.githubusercontent.com/uxcam/ios-swiftui/\(version)/UXCamSwiftUI.xcframework.zip",
+			url: "https://github.com/uxcam/ios-swiftui/raw/\(version)/UXCamSwiftUI.xcframework.zip",
 			checksum: "f82719799ed6abdb7451e1b5bd6f4def5340b89ec4d385418291a7e5cd702c36"
 		)
     ]
