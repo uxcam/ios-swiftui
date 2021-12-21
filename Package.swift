@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "0.1.2"
+let version = "0.8.0-beta.1"
 
 let package = Package(
     
@@ -39,7 +39,7 @@ let package = Package(
             name: "UXCamSwiftUI",
             //path: "./UXCamSwiftUI.xcframework"
 			url: "https://github.com/uxcam/ios-swiftui/raw/\(version)/UXCamSwiftUI.xcframework.zip",
-			checksum: "f82719799ed6abdb7451e1b5bd6f4def5340b89ec4d385418291a7e5cd702c36"
+			checksum: "5de1351ee190f1790cd679b3241a89ea809a6e93422330eea5e519c2779f1fb2"
 		)
     ]
 )
