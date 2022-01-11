@@ -18,7 +18,8 @@ Add an `init` method to your main App struct.
 Call `UXCamSwiftUI.start(with: UXCamSwiftUI.Configuration)` with your configuration to start the UXCam SDK in SwiftUI mode.
 **NB:** The configuration option `enableAutomaticScreenNameTagging` is not available in the UXCamSwiftUI library (manual screen tagging is required in SwiftUI)
 
-eg.
+eg. 
+
 ```swift
 	init()
 	{
@@ -27,6 +28,7 @@ eg.
 		UXCamSwiftUI.start(with: config)
 	}
 ```
+
 To call a completion block when the UXCam session verify completes use:  
   `UXCamSwiftUI.start(with: UXCamSwiftUI.Configuration, sessionStarted: ((Bool) -> ())? = nil)` - the flag indicates if a session started or not
 
