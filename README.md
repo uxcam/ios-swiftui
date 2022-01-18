@@ -1,6 +1,6 @@
 # UXCam-SwiftUI
 
-## Version: 0.8.3 - pre-release - use with caution
+## Version: 0.8.5 - pre-release - use with caution
 
 This package is the framework for the UXCam SwiftUI wrapper.
 It depends on the main UXCam framework, v3.4.0 or higher.
