@@ -1,9 +1,7 @@
 # UXCam-SwiftUI
 
-## Version: 0.8.6 - pre-release - use with caution
-
 This package is the framework for the UXCam SwiftUI wrapper.
-It depends on the main UXCam framework, v3.4.0-beta.6 or higher.
+It depends on the main UXCam framework, v3.4.1 or higher.
 
 Internally it uses some of the ideas in the [Introspect](https://github.com/siteline/SwiftUI-Introspect.git) library, but that library itself is not included here.
 
