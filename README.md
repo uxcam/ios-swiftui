@@ -16,14 +16,14 @@ Internally it uses some of the ideas in the [Introspect](https://github.com/site
 Add an `init` method to your main App struct.
 
 Call `UXCamSwiftUI.start(with: UXCamSwiftUI.Configuration)` with your configuration to start the UXCam SDK in SwiftUI mode.
-**NB:** The configuration option `enableAutomaticScreenNameTagging` is not available in the UXCamSwiftUI library (manual screen tagging is required in SwiftUI)
+**NB:** The configuration option `enableAutomaticScreenNameTagging` defaults to false in the UXCamSwiftUI library as manual screen tagging is required in SwiftUI.
 
 eg. 
 
 ```swift
 	init()
 	{
-		UXCam.optIntoSchematicRecordings()
+		UXCamCore.optIntoSchematicRecordings()
 		let config = UXCamSwiftUI.Configuration(appKey: "YOUR APP KEY")
 		UXCamSwiftUI.start(with: config)
 	}
