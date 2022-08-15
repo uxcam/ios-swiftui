@@ -38,7 +38,7 @@ let package = Package(
         .binaryTarget(
             name: "UXCamSwiftUI",
 			url: "https://github.com/uxcam/ios-swiftui/raw/\(version)/UXCamSwiftUI.xcframework.zip",
-			checksum: "d7a50a7e5bac1d94b8c5ace04a095f398399cd44eda8a09d3a87a84022c4afd0"
+			checksum: "b169bb7ad5dfa7a33883c897908dd88138d39361881539c470668404f20fd1d7"
 		)
     ]
 )
