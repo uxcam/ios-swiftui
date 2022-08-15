@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "1.0.0"
+let version = "1.0.1"
 
 let package = Package(
     
@@ -22,7 +22,7 @@ let package = Package(
 	
 	dependencies:
 	[
-		.package(name: "UXCam", url: "https://github.com/uxcam/ios-sdk", from: Version(3, 4, 0)),
+		.package(name: "UXCam", url: "https://github.com/uxcam/ios-sdk", from: Version(3, 4, 2)),
 	],
 	
     targets: 
