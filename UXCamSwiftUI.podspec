@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.static_framework 	= true
   s.requires_arc		= true
   
-  s.dependency 'UXCam', '~>3.4.2'
+  s.dependency 'UXCam', '~>3.4.3'
   s.swift_version = '5.0'
 
 end
