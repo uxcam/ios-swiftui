@@ -22,7 +22,7 @@ let package = Package(
 	
 	dependencies:
 	[
-		.package(name: "UXCam", url: "https://github.com/uxcam/ios-sdk", from: Version(3, 4, 2)),
+		.package(name: "UXCam", url: "https://github.com/uxcam/ios-sdk", from: Version(3, 4, 3)),
 	],
 	
     targets: 
@@ -38,7 +38,7 @@ let package = Package(
         .binaryTarget(
             name: "UXCamSwiftUI",
 			url: "https://github.com/uxcam/ios-swiftui/raw/\(version)/UXCamSwiftUI.xcframework.zip",
-			checksum: "b169bb7ad5dfa7a33883c897908dd88138d39361881539c470668404f20fd1d7"
+			checksum: "39eb4c2949ac50143d1d756551d7323d3cc1e31719002e581f19bf08893c9051"
 		)
     ]
 )
