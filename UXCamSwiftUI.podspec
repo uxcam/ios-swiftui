@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     			= 'UXCamSwiftUI'
-  s.version  			= '1.0.2'
+  s.version  			= '1.0.3'
   
   s.summary 			= "UXCam SwiftUI wrapper SDK for iOS applications"
   s.description 		= <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.static_framework 	= true
   s.requires_arc		= true
   
-  s.dependency 'UXCam', '~>3.5.0'
+  s.dependency 'UXCam', '~>3.6.1'
   s.swift_version = '5.0'
 
 end
