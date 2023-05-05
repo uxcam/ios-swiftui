@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let version = "1.0.3"
+let version = "1.0.4"
 
 let package = Package(
     
@@ -22,7 +22,7 @@ let package = Package(
 	
 	dependencies:
 	[
-		.package(name: "UXCam", url: "https://github.com/uxcam/ios-sdk", from: Version(3, 6, 1)),
+		.package(name: "UXCam", url: "https://github.com/uxcam/ios-sdk", from: Version(3, 6, 2)),
 	],
 	
     targets: 
@@ -38,7 +38,7 @@ let package = Package(
         .binaryTarget(
             name: "UXCamSwiftUI",
 			url: "https://github.com/uxcam/ios-swiftui/raw/\(version)/UXCamSwiftUI.xcframework.zip",
-			checksum: "c851cabf6c2d153b10213cdf0eb1a63f8ac3432629963de22ef7aa742dee1f5e"
+			checksum: "d499e2255c399c9a57174d4c3995a7c49e4967208999f0844cbad79ccef86a12"
 		)
     ]
 )
