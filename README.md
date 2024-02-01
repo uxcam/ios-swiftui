@@ -1,3 +1,8 @@
+# ⚠️ Deprecated ⚠️
+
+This repository is deprecated and will no longer be supported for future SDK versions. Please migrate to our newer repository at [uxcam-ios-swiftui](https://github.com/uxcam/uxcam-ios-swiftui).
+
+
 # UXCam-SwiftUI
 
 This package is the framework for the UXCam SwiftUI wrapper.
